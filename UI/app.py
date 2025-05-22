@@ -24,8 +24,8 @@ cities = ['Bangalore', 'Chandigarh', 'Delhi', 'Mumbai', 'Kolkata', 'Jaipur',
        'Lucknow', 'Guwahati', 'Mohali']
 
 
-# pipe = pickle.load(open('logistic_regression.pkl', 'rb'))
-pipe = pickle.load(open('random_forest.pkl', 'rb'))
+# pipe = pickle.load(open('models/logistic_regression.pkl', 'rb'))
+pipe = pickle.load(open('models/random_forest.pkl', 'rb'))
 
 st.title('IPL Win Predictor')
 

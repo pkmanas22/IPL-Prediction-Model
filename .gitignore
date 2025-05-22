@@ -1,0 +1,21 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Model and pickle files
+# *.pkl
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
