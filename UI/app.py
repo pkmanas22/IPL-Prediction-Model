@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import joblib
 
 teams = ['Chennai Super Kings',
  'Royal Challengers Bengaluru',
@@ -24,8 +25,8 @@ cities = ['Bangalore', 'Chandigarh', 'Delhi', 'Mumbai', 'Kolkata', 'Jaipur',
        'Lucknow', 'Guwahati', 'Mohali']
 
 
-lr_pipe = pickle.load(open('models/logistic_regression.pkl', 'rb'))
-rf_pipe = pickle.load(open('models/random_forest.pkl', 'rb'))
+lr_pipe = joblib.load(open('models/logistic_regression.pkl', 'rb'))
+rf_pipe = joblib.load(open('models/random_forest.pkl', 'rb'))
 
 def handle_submission (target, current_score, overs, wickets, batting_team, bowling_team, selected_city, model_pipe, model_name) : 
     runs_left = target - current_score
